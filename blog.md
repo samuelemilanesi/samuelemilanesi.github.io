@@ -4,6 +4,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Blog
+permalink: /blog/
+
 ---
 {% for post in site.posts %}
   <div id="post-short">
