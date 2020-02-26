@@ -177,7 +177,9 @@ a:hover	{
 }
 #subtitle{
 	font-weight: lighter;
+	font-style: italic;
 }
 .color_teal{
 	color: #009688;
+	font-weight: bolder;
 }
