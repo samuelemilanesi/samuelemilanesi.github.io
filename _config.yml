@@ -3,10 +3,10 @@ owner: Samuele Milanesi
 email:
 description: My minimalistic presentation page
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://samuelemilanesi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 language: en
 twitter_username:
-github_username:
+github_username: samuelemilanesi
 disqus_username: 
 # Build settings
 markdown: kramdown
