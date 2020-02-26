@@ -173,9 +173,10 @@ a:hover	{
 
 
 #title{
-	font-size: huge; 
+	font-size: 36pt;
 }
 #subtitle{
+	color:grey;
 	font-weight: lighter;
 	font-style: italic;
 }
