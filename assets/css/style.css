@@ -49,10 +49,11 @@
 /*Specific page contents*/
 	
 	#logo	{
+		margin-top: 3%;
 		text-align:center;
 	}
 	#logo img {
-		max-width: 12%;
+		max-width: 14%;
 	}
 
 	#nav {
@@ -181,13 +182,46 @@
 		border-top: 1px solid rgba(0,0,0,0.3);
 	}
 
-	@media screen and (max-width: 850px){
+	/* Screen size specific settings */
+
+	@media screen and (max-width: 800px){
+		#logo img{
+			max-width: 22%;
+		}
 		#main {
 			width: auto;
 			padding: 0% 5% 0% 5%;
 		}
 	}
-/* Screen size specific settings */
+	@media screen and (max-width: 500px){
+		#logo img{
+			max-width: 36%;
+		}
+		#main {
+			width: auto;
+			padding: 0% 5% 0% 5%;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/* @media screen and (max-width: 850px) {
 		#main {
 			width: auto;
