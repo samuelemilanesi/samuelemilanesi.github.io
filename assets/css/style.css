@@ -47,41 +47,68 @@
 	}
 
 /*Specific page contents*/
-	#main {
-		width: 50%;
-		margin: 0 auto;
-	}
-
+	
 	#logo	{
 		text-align:center;
-		margin: 20px auto auto auto;
 	}
 	#logo img {
-		max-width: 27%;
+		max-width: 12%;
 	}
 
 	#nav {
+		width: 100%;
 		text-align:center;
-		margin:auto;
-		margin-top:0px;
-		padding-top:0px;
-		margin-bottom:5px;
-		padding-bottom:5px;
-		/* border-bottom: 1px solid #000; */
 		-webkit-box-shadow: 0px 8px 7px -6px rgba(0,0,0,0.3);
- 		-moz-box-shadow:0px 8px 7px -6px rgba(0,0,0,0.3);
+		-moz-box-shadow:0px 8px 7px -6px rgba(0,0,0,0.3);
 		box-shadow: 0px 8px 7px -6px rgba(0,0,0,0.3);
 		background-color: white; 
 		position:sticky;
 		position: -webkit-sticky; /* Safari */
 		top : 0;
-
+		display: grid;
+		grid-template-columns: 5% 10% 70% 10% 5%;
+		grid-template-rows: 3em;
+		align-items: center;
+		
 	}
 	#nav a:hover{
 		text-decoration: none;
 		border-bottom: 1px solid #009688;
 		display: inline-block;
 		line-height: 0.85;
+	}
+	#minilogo_cell{
+		grid-column-start:2;
+		background-color: white;
+		text-align: center;
+	}
+	#minilogo_img{
+		display: block;
+		max-width: 60%;
+		opacity: 0;
+	}
+	.fade_in{
+		opacity: 1 !important;
+  		transition: opacity 1000ms !important;
+	}
+	.fade_out{
+		opacity: 0 !important;
+		transition: opacity 1000ms !important;
+	}
+	#nav_links_cell{
+		grid-column-start: 3;
+		text-align: center;
+		display: inline-block;
+		align-self: middle;		
+	}
+	.nav_el{
+		padding: 0px 2%;
+	}
+	
+	
+	#main {
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	#content-left {
@@ -100,14 +127,12 @@
 		background-color: #009688;
 		}
 	
-
-
 	#content-left p a:link, #content-left p a:visited{
 		text-decoration: underline;
 		color:cornflowerblue;
 	}
-	#content-left a:hover	{
-		text-decoration: none;
+	#content-left a:hover{
+		text-decoration: none !important;
 	}
 	
 	#content { /*seems unused...*/
@@ -118,8 +143,6 @@
 		margin-bottom:20px;
 		padding-bottom:20px;
 	}
-
-
 
 	#post-short h3, #post h2	{
 		margin-bottom: 0px;
@@ -158,8 +181,14 @@
 		border-top: 1px solid rgba(0,0,0,0.3);
 	}
 
+	@media screen and (max-width: 850px){
+		#main {
+			width: auto;
+			padding: 0% 5% 0% 5%;
+		}
+	}
 /* Screen size specific settings */
-	@media screen and (max-width: 850px) {
+	/* @media screen and (max-width: 850px) {
 		#main {
 			width: auto;
 			margin: 0 auto;
@@ -177,7 +206,6 @@
 
 		#nav {
 			font-size: 2em;
-			padding-bottom: 0.5em;
 		}
 
 		h2 {
@@ -208,7 +236,6 @@
 
 		#nav {
 			font-size: 1.1em;
-			padding-bottom: 0.5em;
 		}
 
 		h2 {
@@ -220,4 +247,4 @@
 		}
 
 	}
-
+ */
