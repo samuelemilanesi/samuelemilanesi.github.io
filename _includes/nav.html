@@ -3,3 +3,15 @@
   <a href="{{site.url}}{{site.baseurl}}/blog">Blog</a> ·
   <a href="{{site.url}}{{site.baseurl}}/projects/">Projects</a>
 </div>
+
+<script type="text/javascript">
+
+  $(window).on("scroll",function()) {
+      if($(window).scrollTop()) {
+          $('nav').addClass('sticky');
+      }
+      else {
+          $('nav'.removeClass('sticky'))
+      }
+  }
+</script>
