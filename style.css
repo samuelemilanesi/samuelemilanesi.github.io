@@ -1,0 +1,35 @@
+body{
+    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+    font-weight:300 !important;
+    color: black !important;
+    background-color: #f2f2f2 !important;
+}
+#name{
+    font-weight: 400;
+    font-size: 2em;
+    margin-top:0.7em;
+}
+.nameDiv{
+    margin-top: 1.4em ;
+}
+#myPic{         
+    border-radius: 2em;
+    max-height:20em;
+    max-width: 100%;
+}
+.tab-content{
+    min-height: 20em;
+
+}
+.content{
+    padding-top: 1em ; 
+
+}
+
+.nav{
+    font-size: 1.4em;
+    margin-top:1em;
+}
+
+.nav .active{
+    font-weight: 500;}
